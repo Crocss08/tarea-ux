@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis notas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="tarjeta">
+    <h1>Mis notas</h1>
+    <p class="ayuda">Escribe una nota, elige una categoría y pulsa «Agregar nota».</p>
+
+    <form id="formulario">
+      <fieldset>
+        <legend>Nueva nota</legend>
+        <label for="texto">Texto de la nota</label>
+        <input id="texto" type="text" maxlength="120" autocomplete="off"
+               placeholder="Ej.: Estudiar para el examen de física">
+
+        <label for="categoria">Categoría</label>
+        <select id="categoria">
+          <option value="Estudio">Estudio</option>
+          <option value="Personal">Personal</option>
+          <option value="Trabajo">Trabajo</option>
+        </select>
+      </fieldset>
+
+      <div class="acciones">
+        <button type="submit" id="agregar" class="boton-principal" disabled>Agregar nota</button>
+      </div>
+    </form>
+
+    <div id="estado" class="mensaje" role="status">
+      <span id="mensaje"></span>
+      <button type="button" id="deshacer" class="boton-enlace" hidden>Deshacer</button>
+    </div>
+
+    <section aria-labelledby="titulo-lista">
+      <h2 id="titulo-lista">Notas guardadas (<span id="contador">0</span>)</h2>
+      <p id="vacio" class="ayuda">Aún no tienes notas. Escribe la primera arriba.</p>
+      <div id="lista"></div>
+      <button type="button" id="borrar-todas" class="boton-peligro" hidden>Borrar todas las notas</button>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
