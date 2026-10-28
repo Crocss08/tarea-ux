@@ -2,7 +2,7 @@
 Formulario de inscripcion redisenado con principios de UX/UI
 # Auditoría UX/UI: app de notas
 
-Página publicada: https://TU-USUARIO.github.io/TU-REPO/
+Página publicada: https://Crocss08.github.io/tarea-ux/
 
 ## 1. Heurísticas de Nielsen
 
